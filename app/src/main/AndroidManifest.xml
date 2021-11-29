@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sunil.drappointments">
+
+    <application
+        android:name=".DrAppointments"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_dr_appt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_dr_appt_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DrAppointments">
+        <activity
+            android:name=".feature_appointments.presentation.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DrAppointments.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
